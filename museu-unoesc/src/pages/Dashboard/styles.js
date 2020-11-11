@@ -30,5 +30,4 @@ export const PesquisaContainer = styled.div`
   background: #ddd;
 `;
 
-export const LoginContaienr = styled.div`
-`;
+export const LoginContaienr = styled.div``;

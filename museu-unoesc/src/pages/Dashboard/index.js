@@ -1,22 +1,28 @@
-import {Container, Header, LogoUnoesc, TituloHeader, PesquisaContainer, LoginContaienr, Spacamento} from './styles';
+import React from "react";
 
-import logoUnoesc from '../../assets/unoescLogo.jpg'
+import {
+  Container,
+  Header,
+  LogoUnoesc,
+  TituloHeader,
+  PesquisaContainer,
+  LoginContaienr,
+} from "./styles";
+
+import logoUnoesc from "../../assets/unoescLogo.jpg";
 
 const Dashboard = () => {
-
-  return  (
+  return (
     <Container>
       <Header>
-      
-        <LogoUnoesc src={logoUnoesc}/>
+        <LogoUnoesc src={logoUnoesc} />
         <TituloHeader>MUSEU UNOESC</TituloHeader>
-       
-        <PesquisaContainer></PesquisaContainer>
+
+        <PesquisaContainer />
         <LoginContaienr>Login</LoginContaienr>
-       
       </Header>
     </Container>
-  )
+  );
 };
 
 export default Dashboard;
