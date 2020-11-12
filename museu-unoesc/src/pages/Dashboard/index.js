@@ -1,23 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { FiSearch } from "react-icons/fi";
+
+import CategoriaComponent from "../Categoria";
+import HomeComponent from "../Home";
 
 import {
   Container,
-  Header,
-  LogoUnoesc,
-  TituloHeader,
-  PesquisaContainer,
-  LoginContaienr,
   Content,
   Categoria,
   PesquisaCategoria,
   CategoriaItem,
   IconeSearch,
+  RenderComponente,
 } from "./styles";
 
-import logoUnoesc from "../../assets/unoescLogo.jpg";
-
 const Dashboard = () => {
+  const [Renderizar, setRenderizar] = useState(HomeComponent);
+
   const categorias = [
     { id: 1, descricao: "Ciencias" },
     { id: 2, descricao: "Ciencias" },
@@ -25,6 +24,11 @@ const Dashboard = () => {
     { id: 4, descricao: "Ciencias" },
     { id: 5, descricao: "Ciencias" },
   ];
+
+  const mudarRender = (componente, id) => {
+    setRenderizar(componente);
+  };
+
   return (
     <Container>
       <Content>
@@ -37,9 +41,15 @@ const Dashboard = () => {
           </PesquisaCategoria>
 
           {categorias.map((e) => (
-            <CategoriaItem key={e.id}>{e.descricao}</CategoriaItem>
+            <CategoriaItem
+              onClick={() => mudarRender(<CategoriaComponent id={e.id} />)}
+              key={e.id}
+            >
+              {e.descricao}
+            </CategoriaItem>
           ))}
         </Categoria>
+        <RenderComponente>{Renderizar}</RenderComponente>
       </Content>
     </Container>
   );

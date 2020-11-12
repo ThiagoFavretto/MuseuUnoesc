@@ -6,32 +6,6 @@ export const Container = styled.div`
   background: #eee;
 `;
 
-export const Header = styled.div`
-  width: 100%;
-  height: 80px;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-`;
-
-export const LogoUnoesc = styled.img`
-  width: 50px;
-  height: 50px;
-`;
-
-export const TituloHeader = styled.div`
-  width: 120px;
-`;
-
-export const PesquisaContainer = styled.div`
-  width: 30%;
-  height: 15px;
-  background: #ddd;
-`;
-
-export const LoginContaienr = styled.div``;
-
 export const Content = styled.div`
   width: 100%;
   height: 100%;
@@ -55,9 +29,8 @@ export const PesquisaCategoria = styled.button`
   margin-bottom: 40px;
   align-items: center;
   text-align: center;
-  display:  flex;
+  display: flex;
   justify-content: center;
-
 `;
 
 export const CategoriaItem = styled.button`
@@ -72,4 +45,11 @@ export const IconeSearch = styled.div`
   margin-left: 10px;
   position: relative;
   float: right;
+`;
+
+export const RenderComponente = styled.div`
+  background: red;
+  width: 100%;
+  height: 100%;
+  padding: 30px 30px 0 30px;
 `;

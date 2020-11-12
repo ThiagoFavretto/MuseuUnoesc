@@ -8,7 +8,7 @@ import { Wrapper } from "./styles";
 const DefaultLayout = ({ children }) => {
   return (
     <Wrapper>
-<Header />      
+      <Header />
       {children}
     </Wrapper>
   );
