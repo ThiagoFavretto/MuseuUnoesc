@@ -27,13 +27,6 @@ const Dashboard = () => {
   ];
   return (
     <Container>
-      <Header>
-        <LogoUnoesc src={logoUnoesc} />
-        <TituloHeader>MUSEU UNOESC</TituloHeader>
-
-        <PesquisaContainer />
-        <LoginContaienr>Login</LoginContaienr>
-      </Header>
       <Content>
         <Categoria>
           <PesquisaCategoria>
