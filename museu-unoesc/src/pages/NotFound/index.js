@@ -1,14 +1,21 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import BackgroundImg from "../../assets/not.png";
+import BackgroundImg from "../../assets/not.gif";
 
 import { Container } from "./styles";
+import { Back } from "./styles";
+import { Alinhamento } from "./styles";
+import { BiArrowBack } from "react-icons/bi";
 
 const NotFound = () => {
   return (
     <Container back={BackgroundImg}>
-      <Link to="/">VOLTAR PRO DASHBOARD</Link>
+      <Link to="/"><Alinhamento>
+        <BiArrowBack color="#000" size={40}></BiArrowBack>
+        <Back>VOLTAR PRO DASHBOARD</Back>
+        </Alinhamento>
+      </Link>
     </Container>
   );
 };
