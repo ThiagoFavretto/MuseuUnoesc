@@ -4,6 +4,7 @@ import { FiSearch } from "react-icons/fi";
 import CategoriaComponent from "../Categoria";
 import HomeComponent from "../Home";
 
+
 import {
   Container,
   Content,
@@ -12,6 +13,7 @@ import {
   CategoriaItem,
   IconeSearch,
   RenderComponente,
+  ComponentContainer
 } from "./styles";
 
 const Dashboard = () => {
@@ -49,7 +51,7 @@ const Dashboard = () => {
             </CategoriaItem>
           ))}
         </Categoria>
-        <RenderComponente>{Renderizar}</RenderComponente>
+        <RenderComponente><ComponentContainer>{Renderizar}</ComponentContainer></RenderComponente>
       </Content>
     </Container>
   );

@@ -48,8 +48,12 @@ export const IconeSearch = styled.div`
 `;
 
 export const RenderComponente = styled.div`
-  background: red;
   width: 100%;
   height: 100%;
   padding: 30px 30px 0 30px;
+`;
+
+export const ComponentContainer = styled.div`
+  width: 100%;
+  height: 100%;
 `;
