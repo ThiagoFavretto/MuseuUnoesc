@@ -1,18 +1,48 @@
 import React from "react";
 
-import { Container } from "./styles";
-import { Titulo } from "./styles";
-import { Lista } from "./styles";
-import { Grid } from "./styles";
-import { Slide } from "./styles";
-
+import {
+  Container,
+  Imagem,
+  Titulo,
+  Lista,
+  Grid,
+  Slide,
+  ContainerSlider,
+  Nome,
+  Descricao,
+} from "./styles";
 
 const objetos = [
-  { id: 1, descricao: "Objeto 1", texto: "husbjfjlaehblgkjsrnlgkjbsrlkgjbdjhrgbkehsrgkjhaebrfkhajwvekavjyregvqgvfhawgvkfuavwuk" },
-  { id: 2, descricao: "Objeto 2", texto: "husbjfjlaehblgkjsrnlgkjbsrlkgjbdjhrgbkehsrgkjhaebrfkhajwvekavjyregvqgvfhawgvkfuavwuk" },
-  { id: 3, descricao: "Objeto 3", texto: "husbjfjlaehblgkjsrnlgkjbsrlkgjbdjhrgbkehsrgkjhaebrfkhajwvekavjyregvqgvfhawgvkfuavwuk" },
-  { id: 4, descricao: "Objeto 4", texto: "husbjfjlaehblgkjsrnlgkjbsrlkgjbdjhrgbkehsrgkjhaebrfkhajwvekavjyregvqgvfhawgvkfuavwuk" },
-  { id: 5, descricao: "Objeto ", texto: "husbjfjlaehblgkjsrnlgkjbsrlkgjbdjhrgbkehsrgkjhaebrfkhajwvekavjyregvqgvfhawgvkfuavwuk" },
+  {
+    id: 1,
+    nome: "Objeto 1",
+    descricao:
+      "husbjfjlaehblgkjsrnlgkjbsrlkgjbdjhrgbkehsrgkjhaebrfkhajwvekavjyregvqgvfhawgvkfuavwuk",
+  },
+  {
+    id: 2,
+    nome: "Objeto 2",
+    descricao:
+      "husbjfjlaehblgkjsrnlgkjbsrlkgjbdjhrgbkehsrgkjhaebrfkhajwvekavjyregvqgvfhawgvkfuavwuk",
+  },
+  {
+    id: 3,
+    nome: "Objeto 3",
+    descricao:
+      "husbjfjlaehblgkjsrnlgkjbsrlkgjbdjhrgbkehsrgkjhaebrfkhajwvekavjyregvqgvfhawgvkfuavwuk",
+  },
+  {
+    id: 4,
+    nome: "Objeto 4",
+    descricao:
+      "husbjfjlaehblgkjsrnlgkjbsrlkgjbdjhrgbkehsrgkjhaebrfkhajwvekavjyregvqgvfhawgvkfuavwuk",
+  },
+  {
+    id: 5,
+    nome: "Objeto 5",
+    descricao:
+      "husbjfjlaehblgkjsrnlgkjbsrlkgjbdjhrgbkehsrgkjhaebrfkhajwvekavjyregvqgvfhawgvkfuavwukhusbjfjlaehblgkjsrnlgkjbsrlkgjbdjhrgbkehsrgkjhaebrfkhajwvekavjyregvqgvfhawgvkfuavwukhusbjfjlaehblgkjsrnlgkjbsrlkgjbdjhrgbkehsrgkjhaebrfkhajwvekavjyregvqgvfhawgvkfuavwukhusbjfjlaehblgkjsrnlgkjbsrlkgjbdjhrgbkehsrgkjhaebrfkhajwvekavjyregvqgvfhawgvkfuavwukhusbjfjlaehblgkjsrnlgkjbsrlkgjbdjhrgbkehsrgkjhaebrfkhajwvekavjyregvqgvfhawgvkfuavwukhusbjfjlaehblgkjsrnlgkjbsrlkgjbdjhrgbkehsrgkjhaebrfkhajwvekavjyregvqgvfhawgvkfuavwukhusbjfjlaehblgkjsrnlgkjbsrlkgjbdjhrgbkehsrgkjhaebrfkhajwvekavjyregvqgvfhawgvkfuavwukhusbjfjlaehblgkjsrnlgkjbsrlkgjbdjhrgbkehsrgkjhaebrfkhajwvekavjyregvqgvfhawgvkfuavwuk",
+  },
 ];
 
 const Categoria = ({ id }) => {
@@ -21,16 +51,15 @@ const Categoria = ({ id }) => {
       <Lista>
         <Titulo>Categoria</Titulo>
         <Grid>
-
-        {objetos.map((e) => (
-            <Slide
-              onClick={() =>{ }}
-              key={e.id}
-            >
-              {e.descricao}
+          {objetos.map((e) => (
+            <Slide onClick={() => {}} key={e.id}>
+              <Imagem />
+              <ContainerSlider>
+                <Nome>{e.nome}</Nome>
+                <Descricao>{e.descricao}</Descricao>
+              </ContainerSlider>
             </Slide>
           ))}
-          
         </Grid>
       </Lista>
     </Container>

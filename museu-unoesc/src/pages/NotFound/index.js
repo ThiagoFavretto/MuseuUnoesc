@@ -13,7 +13,7 @@ const NotFound = () => {
     <Container back={BackgroundImg}>
       <Link to="/"><Alinhamento>
         <BiArrowBack color="#000" size={40}></BiArrowBack>
-        <Back>VOLTAR PRO DASHBOARD</Back>
+        <Back>VOLTAR PARA O INÍCIO</Back>
         </Alinhamento>
       </Link>
     </Container>

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   height: 100%;
-  background: #eee;
+  overflow-y: auto;
 `;
 
 export const Content = styled.div`
@@ -55,5 +55,4 @@ export const RenderComponente = styled.div`
 
 export const ComponentContainer = styled.div`
   width: 100%;
-  height: 100%;
 `;
