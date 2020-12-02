@@ -48,7 +48,7 @@ export const IconeSearch = styled.div`
 `;
 
 export const RenderComponente = styled.div`
-  width: 100%;
+  width: 85%;
   height: 100%;
   padding: 30px 30px 0 30px;
 `;
